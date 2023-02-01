@@ -7,12 +7,15 @@ public class CreditPaymentService {
         double result;
         double pM = percent / 100;
         double cof = pM / 12;
+
         double multiplier = 1 + cof;
         double multiplierM = Math.pow(multiplier,term);
-        double stepOne = amount * cof;
-        double stepOneMore = stepOne * multiplierM;
         double divider = multiplierM - 1;
-        double stepTwo = stepOneMore / divider;
+
+        double stepOne = amount * cof * multiplierM;
+
+        double stepTwo = stepOne / divider;
+
         return result = stepTwo;
 
     }
