@@ -1,7 +1,7 @@
 public class CreditPaymentService {
 
     // Метод calculate выполняет только расчет ежемесячного платежа исходя из данных о сумме займа, процентной ставке
-    // и сроке займа по формуле, представленой
+    // и сроке займа по формуле, представленной
     // на сайте банка https://sovcombank.ru/blog/krediti/kak-rasschitat-annuitetnii-platezh
     public double calculate (int amount, double percent, int term) {
 
